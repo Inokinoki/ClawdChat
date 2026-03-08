@@ -35,7 +35,16 @@ async def test_claude():
             }]
         )
 
-        response_text = response.content[0].text
+        # Extract response text (handle different content block types)
+        response_text = ""
+        for block in response.content:
+            if block.type == "text":
+                response_text = block.text
+                break
+            # Skip thinking blocks and other block types
+
+        if not response_text:
+            raise Exception("No text response received from API")
         print(f"✅ Response: {response_text}")
         print("\n✅ Test passed! New API configuration works.")
 

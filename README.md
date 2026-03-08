@@ -5,6 +5,13 @@ A simple, fast Telegram bot powered by Claude AI using the Anthropic API SDK.
 ## Features
 
 - 🤖 **AI-Powered**: Uses Claude AI for intelligent responses
+- 📸 **Vision Support**: Analyze images and photos
+- 📄 **Document Processing**: Read and analyze text files
+- 🎤 **Voice Support**: Voice message handling (info mode)
+- 🎬 **Video Support**: Video message handling (info mode)
+- 📍 **Location Support**: Process location data
+- 😀 **Sticker Support**: Sticker acknowledgment
+- 📊 **User Statistics**: Track your usage
 - 💾 **Conversation Memory**: Remembers context within conversations
 - 🌐 **Custom API Support**: Works with any Anthropic-compatible API
 - 📝 **Natural Conversations**: Friendly, helpful interactions
@@ -92,6 +99,21 @@ make clean         # Clean cache files
 - `/start` - Start the bot and see welcome message
 - `/help` - Display help information
 - `/reset` - Clear conversation memory
+- `/stats` - View your usage statistics
+- `/id` - Get your User and Chat IDs
+- `/about` - Information about the bot
+
+## Supported Media Types
+
+- 📸 **Photos/Images** - Send images for AI analysis and descriptions
+- 📄 **Text Files** - Upload .txt, .md, .py, .js files for analysis
+- 🎤 **Voice Messages** - Voice note handling (info only, transcription not yet available)
+- 🎬 **Videos** - Video message handling (info only, analysis not yet available)
+- 📍 **Location** - Share your location (for future location-based features)
+- 😀 **Stickers** - Sticker acknowledgment
+- 💬 **Text Messages** - Natural conversations
+
+**Note**: Large files (>10MB) or binary files will show an error message. Voice transcription and video analysis require additional services.
 
 ## Customization
 
