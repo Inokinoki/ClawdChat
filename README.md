@@ -130,12 +130,8 @@ ClawdChat/
 ├── telegram_bot_simple.py  # Main bot implementation
 ├── test_new_config.py      # API connection test
 ├── pyproject.toml          # Dependencies (uv)
-├── Makefile                # Convenient commands
 ├── .env.example            # Environment template
 ├── README.md               # This file
-├── QUICKSTART.md           # Quick start guide
-├── UV_GUIDE.md             # uv package manager guide
-└── UV_REFERENCE.md         # Quick uv reference
 ```
 
 ## Deployment
@@ -215,8 +211,6 @@ sudo apt update && sudo apt install python3.11
 
 ## Additional Resources
 
-- [QUICKSTART.md](QUICKSTART.md) - Quick start guide
-- [UV_GUIDE.md](UV_GUIDE.md) - Comprehensive uv guide
 - [Anthropic Documentation](https://docs.anthropic.com/)
 - [Telegram Bot API](https://core.telegram.org/bots/api)
 
